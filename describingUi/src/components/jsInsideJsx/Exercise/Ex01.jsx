@@ -15,7 +15,7 @@ const person = {
   },
 };
 
-export default function TodoList() {
+export default function Ex01() {
   return (
     <div style={person.theme}>
       <h1>{person.name}`s Todos</h1>
