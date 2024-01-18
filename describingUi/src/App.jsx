@@ -1,10 +1,14 @@
-import FunctionInComponent from "./components/jsInsideJsx/FunctionInComponent";
+//import FunctionInComponent from "./components/jsInsideJsx/FunctionInComponent";
+
+import DoubleCurly from "./components/jsInsideJsx/doubleCurly";
 
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
-      <FunctionInComponent />
+      <h1 style={{ textAlign: "center" }}>Root App</h1>
+      <hr />
+      {/* <FunctionInComponent /> */}
+      <DoubleCurly />
     </>
   );
 }
