@@ -4,6 +4,7 @@
 //imageId ('7vQD0fP'), imageSize ('s'), and file extension (always '.jpg').
 //However, something is wrong with how the <img> tag specifies its src. Can you fix it?
 
+// eslint-disable-next-line no-unused-vars
 const baseUrl = "https://i.imgur.com/";
 const person = {
   name: "Gregorio Y. Zara",

@@ -1,6 +1,8 @@
 //import FunctionInComponent from "./components/jsInsideJsx/FunctionInComponent";
 
-import Solution01_Ex01 from "./components/jsInsideJsx/Exercise/Solution01_Ex01";
+import Solution02_Ex01 from "./components/jsInsideJsx/Exercise/Solution02_Ex01";
+
+//import Solution01_Ex01 from "./components/jsInsideJsx/Exercise/Solution01_Ex01";
 
 //import Ex01 from "./components/jsInsideJsx/Exercise/Ex01";
 
@@ -14,7 +16,8 @@ function App() {
       {/* <FunctionInComponent /> */}
       {/* <DoubleCurly /> */}
       {/* <Ex01 /> */}
-      <Solution01_Ex01 />
+      {/* <Solution01_Ex01 /> */}
+      <Solution02_Ex01 />
     </>
   );
 }
