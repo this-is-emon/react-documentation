@@ -1,6 +1,10 @@
 //import FunctionInComponent from "./components/jsInsideJsx/FunctionInComponent";
 
-import Solution02_Ex01 from "./components/jsInsideJsx/Exercise/Solution02_Ex01";
+import PassingProps_02 from "./components/Props/PassingProps_02";
+
+//import Intro_01 from "./components/Props/Intro_01";
+
+//import Solution02_Ex01 from "./components/jsInsideJsx/Exercise/Solution02_Ex01";
 
 //import Solution01_Ex01 from "./components/jsInsideJsx/Exercise/Solution01_Ex01";
 
@@ -14,10 +18,16 @@ function App() {
       <h1 style={{ textAlign: "center" }}>Root App</h1>
       <hr />
       {/* <FunctionInComponent /> */}
+
+      {/* //----Javascript inside JSX----// */}
       {/* <DoubleCurly /> */}
       {/* <Ex01 /> */}
       {/* <Solution01_Ex01 /> */}
-      <Solution02_Ex01 />
+      {/* <Solution02_Ex01 /> */}
+
+      {/* //----PROPS----// */}
+      {/* <Intro_01 /> */}
+      <PassingProps_02 />
     </>
   );
 }
