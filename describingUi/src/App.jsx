@@ -1,6 +1,7 @@
 //import FunctionInComponent from "./components/jsInsideJsx/FunctionInComponent";
 
-import PassingProps_02 from "./components/Props/PassingProps_02";
+import JsxAsChildren_03 from "./components/Props/JsxAsChildren_03";
+//import PassingProps_02 from "./components/Props/PassingProps_02";
 
 //import Intro_01 from "./components/Props/Intro_01";
 
@@ -27,7 +28,8 @@ function App() {
 
       {/* //----PROPS----// */}
       {/* <Intro_01 /> */}
-      <PassingProps_02 />
+      {/* <PassingProps_02 /> */}
+      <JsxAsChildren_03 />
     </>
   );
 }
