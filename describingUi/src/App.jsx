@@ -1,6 +1,8 @@
 //import FunctionInComponent from "./components/jsInsideJsx/FunctionInComponent";
 
-import JsxAsChildren_03 from "./components/Props/JsxAsChildren_03";
+import ReduceDuplication_01 from "./components/Props/Exercise2/ReduceDuplication_01";
+
+//import JsxAsChildren_03 from "./components/Props/JsxAsChildren_03";
 //import PassingProps_02 from "./components/Props/PassingProps_02";
 
 //import Intro_01 from "./components/Props/Intro_01";
@@ -29,7 +31,8 @@ function App() {
       {/* //----PROPS----// */}
       {/* <Intro_01 /> */}
       {/* <PassingProps_02 /> */}
-      <JsxAsChildren_03 />
+      {/* <JsxAsChildren_03 /> */}
+      <ReduceDuplication_01 />
     </>
   );
 }
