@@ -1,35 +1,4 @@
-/* eslint-disable react/prop-types */
-import { getImageUrl } from "../utils";
-
-// eslint-disable-next-line react/prop-types
-function Profile({ person, imageSize = 70 }) {
-  const imageSrc = getImageUrl(person);
-
-  return (
-    <section className="profile">
-      <h2>{person.name}</h2>
-      <img
-        className="avatar"
-        src={imageSrc}
-        alt={person.name}
-        width={imageSize}
-        height={imageSize}
-      />
-      <ul>
-        <li>
-          <b>Profession:</b> {person.profession}
-        </li>
-        <li>
-          <b>Awards: {person.awards.length} </b>({person.awards.join(", ")})
-        </li>
-        <li>
-          <b>Discovered: </b>
-          {person.discovery}
-        </li>
-      </ul>
-    </section>
-  );
-}
+import Profile from "./Profile";
 
 function ReduceDuplication_01() {
   return (
@@ -37,8 +6,9 @@ function ReduceDuplication_01() {
       <h1>Notable Scientists</h1>
       <Profile
         person={{
-          imageId: "szV5sdG",
           name: "Maria Skłodowska-Curie",
+          imageId: "szV5sdG",
+          size: 70,
           profession: "physicist and chemist",
           discovery: "polonium (chemical element)",
           awards: [
