@@ -2,16 +2,21 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 
+//Both of the conditional branches return <li className="item">...</li>
+/*
+    if (isPacked) {
+    return <li className="item">{name} ✔</li>;
+    }
+    return <li className="item">{name}</li>;
+*/
+//While this duplication isn’t harmful, it could make your code harder to maintain.
+//What if you want to change the className? You’d have to do it in two places in your code!
+//In such a situation, you could conditionally include a little JSX to make your code more DRY.
+
 function Item({ name, isPacked }) {
-  //If isPacked is true, the component will return nothing, null.
-  //Otherwise, it will return JSX to render.
-  if (isPacked) {
-    return null;
-  }
-  return <li className="isPacked">{name}</li>;
+  //Conditional (ternary) operator (? :)
+  return <li className="item">{isPacked ? name + "✔" : name}</li>;
 }
-//In practice, returning null from a component isn’t common
-//because it might surprise a developer trying to render it.
 
 function PackingList() {
   return (
