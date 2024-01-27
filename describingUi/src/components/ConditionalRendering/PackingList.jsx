@@ -18,7 +18,7 @@ function Item({ name, isPacked }) {
   //When the shortcuts get in the way of writing plain code, try using an if statement and a variable
   let itemContent = name;
   if (isPacked) {
-    itemContent = name + " ✔";
+    itemContent = <del>{name + " ✔"}</del>;
   }
 
   //Curly braces open the “window into JavaScript”. Embed the variable with curly braces in the returned JSX tree,
