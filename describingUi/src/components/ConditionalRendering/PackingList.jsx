@@ -3,12 +3,15 @@
 import React from "react";
 
 function Item({ name, isPacked }) {
-  //If the isPacked prop is true, this code returns a different JSX tree.
+  //If isPacked is true, the component will return nothing, null.
+  //Otherwise, it will return JSX to render.
   if (isPacked) {
-    return <li className="isPacked">{name} ✔</li>;
+    return null;
   }
   return <li className="isPacked">{name}</li>;
 }
+//In practice, returning null from a component isn’t common
+//because it might surprise a developer trying to render it.
 
 function PackingList() {
   return (
