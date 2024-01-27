@@ -14,8 +14,14 @@ import React from "react";
 //In such a situation, you could conditionally include a little JSX to make your code more DRY.
 
 function Item({ name, isPacked }) {
-  //Conditional (ternary) operator (? :)
-  return <li className="item">{isPacked ? name + "✔" : name}</li>;
+  //Logical AND operator (&&)
+  //You can read this as “if isPacked, then (&&) render the checkmark, otherwise, render nothing”.
+  return (
+    <li className="item">
+      {/* Don’t put numbers on the left side of &&.Make the left side a boolean: messageCount > 0 && <p>New messages</p> */}
+      {name} {isPacked && "✔"}
+    </li>
+  );
 }
 
 function PackingList() {
