@@ -1,6 +1,7 @@
 //import FunctionInComponent from "./components/jsInsideJsx/FunctionInComponent";
 
-import PackingList from "./components/ConditionalRendering/PackingList";
+//import PackingList from "./components/ConditionalRendering/PackingList";
+import Lists from "./components/RenderingLists/Lists";
 //import ExtractCardComp_03 from "./components/Props/Exercise2/ExtractCardComp_03";
 //import ImageSizeChange_02 from "./components/Props/Exercise2/ImageSizeChange_02";
 //import ReduceDuplication_01 from "./components/Props/Exercise2/ReduceDuplication_01";
@@ -40,7 +41,10 @@ function App() {
       {/* <ExtractCardComp_03 /> */}
 
       {/* //----Conditional Rendering----// */}
-      <PackingList />
+      {/* <PackingList /> */}
+
+      {/* //----Rendering Lists----// */}
+      <Lists />
     </>
   );
 }
