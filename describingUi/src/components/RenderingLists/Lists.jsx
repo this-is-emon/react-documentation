@@ -1,19 +1,38 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
 // eslint-disable-next-line no-unused-vars
-import React from "react";
 
 const people = [
-  "Creola Katherine Johnson: mathematician",
-  "Mario José Molina-Pasquel Henríquez: chemist",
-  "Mohammad Abdus Salam: physicist",
-  "Percy Lavon Julian: chemist",
-  "Subrahmanyan Chandrasekhar: astrophysicist",
+  {
+    id: 0,
+    name: "Creola Katherine Johnson",
+    profession: "mathematician",
+  },
+  {
+    id: 1,
+    name: "Mario José Molina-Pasquel Henríquez",
+    profession: "chemist",
+  },
+  {
+    id: 2,
+    name: "Mohammad Abdus Salam",
+    profession: "physicist",
+  },
+  {
+    name: "Percy Lavon Julian",
+    profession: "chemist",
+  },
+  {
+    name: "Subrahmanyan Chandrasekhar",
+    profession: "astrophysicist",
+  },
 ];
 
 function Lists() {
-  const listItems = people.map((person) => <li>{person}</li>);
-  return <ul>{listItems}</ul>;
+  //This method takes an array of items, passes them through a “test” (a function that returns true or false),
+  //and returns a new array of only those items that passed the test (returned true).
+  const chemists = people.filter((person) => person.profession === "chemist");
+  console.log(chemists);
 }
 
 export default Lists;
