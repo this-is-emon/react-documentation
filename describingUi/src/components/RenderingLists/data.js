@@ -21,6 +21,7 @@ export const people = [
       imageId: "bE7W1ji",
     },
     {
+      id: 3,
       name: "Percy Lavon Julian",
       profession: "chemist",
       accomplishment:
@@ -28,6 +29,7 @@ export const people = [
       imageId: "IOjWm71",
     },
     {
+      id: 4,
       name: "Subrahmanyan Chandrasekhar",
       profession: "astrophysicist",
       accomplishment: "white dwarf star mass calculations",

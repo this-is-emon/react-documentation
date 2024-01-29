@@ -9,11 +9,11 @@ function Lists() {
   //This method takes an array of items, passes them through a “test” (a function that returns true or false),
   //and returns a new array of only those items that passed the test (returned true).
   const chemists = people.filter((person) => person.profession === "chemist");
-  console.log(chemists);
 
   //Mapping over chemists
   const listItems = chemists.map((chemist) => (
-    <li>
+    //JSX elements directly inside a map() call always need keys!
+    <li key={chemist.id}>
       <img src={getImageUrl(chemist)} alt={chemist.name} />
       <p>
         <b>{chemist.name}:</b>
